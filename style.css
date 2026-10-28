@@ -1,0 +1,531 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background: #ffffff;
+    color: #121212;
+    font-family: Georgia, "Times New Roman", serif;
+    max-width: 1600px;
+    margin: 0 auto;
+    padding: 0 28px;
+}
+
+button {
+    cursor: pointer;
+    font-family: Arial, sans-serif;
+}
+
+.top-header {
+    width: 100%;
+    border-bottom: 1px solid #222;
+}
+
+.top-tools {
+    height: 38px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    border-bottom: 1px solid #e2e2e2;
+    font-family: Arial, sans-serif;
+}
+
+.left-tools {
+    display: flex;
+    gap: 16px;
+}
+
+.left-tools button {
+    background: transparent;
+    border: none;
+    font-size: 18px;
+}
+
+.top-links {
+    font-size: 9px;
+    font-weight: bold;
+    letter-spacing: 1px;
+    text-align: center;
+}
+
+.account-links {
+    display: flex;
+    gap: 8px;
+}
+
+.account-links button {
+    background: #567d9b;
+    border: 1px solid #567d9b;
+    color: white;
+    border-radius: 3px;
+    font-size: 9px;
+    font-weight: bold;
+    padding: 7px 10px;
+}
+
+.account-links button:last-child {
+    background: #567d9b;
+}
+
+.date-row {
+    height: 31px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    font-family: Arial, sans-serif;
+    font-size: 9px;
+}
+
+.date-row strong,
+.date-row span {
+    display: block;
+}
+
+.date-row span {
+    margin-top: 3px;
+}
+
+.weather {
+    font-size: 11px;
+}
+
+.masthead {
+    text-align: center;
+    padding: 0 0 9px;
+}
+
+.masthead h1 {
+    font-size: clamp(30px, 5vw, 56px);
+    font-weight: 900;
+    letter-spacing: -2.5px;
+    line-height: 1.1;
+    white-space: nowrap;
+}
+
+.navigation {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 12px;
+    overflow: hidden;
+    white-space: nowrap;
+    border-top: 1px solid #dedede;
+    padding: 10px 0;
+    font-family: Arial, sans-serif;
+    font-size: 11px;
+}
+
+.navigation a {
+    color: #222;
+    text-decoration: none;
+}
+
+.navigation a:hover {
+    text-decoration: underline;
+}
+
+.news-layout {
+    display: grid;
+    grid-template-columns: 1.02fr 2fr 1.05fr;
+    gap: 20px;
+    padding-top: 17px;
+}
+
+.left-column,
+.center-column,
+.right-column {
+    min-width: 0;
+}
+
+.left-column {
+    border-right: 1px solid #dedede;
+    padding-right: 17px;
+}
+
+.live-label {
+    color: #d71920;
+    font-family: Arial, sans-serif;
+    font-weight: bold;
+    font-size: 11px;
+    margin-bottom: 12px;
+}
+
+.live-label span {
+    color: #777;
+    font-weight: normal;
+    margin-left: 6px;
+}
+
+h2,
+h3 {
+    font-family: Georgia, "Times New Roman", serif;
+    font-weight: bold;
+}
+
+.lead-small h2 {
+    font-size: clamp(19px, 2vw, 27px);
+    line-height: 1.08;
+    margin-bottom: 10px;
+}
+
+.lead-small p,
+.left-bottom p {
+    color: #444;
+    font-size: 13px;
+    line-height: 1.4;
+    margin-bottom: 7px;
+}
+
+.lead-small > a {
+    color: #333;
+    font-size: 11px;
+    text-decoration: none;
+}
+
+.air-quality {
+    margin-top: 17px;
+    border-top: 1px solid #ccc;
+    padding-top: 10px;
+    font-family: Arial, sans-serif;
+}
+
+.air-quality h4 {
+    font-size: 11px;
+    margin-bottom: 7px;
+}
+
+.quality-grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    border: 1px solid #ddd;
+}
+
+.quality-grid div {
+    padding: 8px 5px;
+    border-bottom: 1px solid #ddd;
+    font-size: 10px;
+}
+
+.quality-grid div:nth-child(odd) {
+    border-right: 1px solid #ddd;
+}
+
+.quality-grid span,
+.quality-grid strong {
+    display: block;
+}
+
+.quality-grid span {
+    color: #555;
+    margin-bottom: 5px;
+}
+
+.quality-grid strong {
+    font-size: 11px;
+}
+
+.quality-grid div:first-child strong {
+    background: #f5e36a;
+    display: inline-block;
+    padding: 2px;
+}
+
+.air-quality small {
+    display: block;
+    color: #777;
+    font-size: 9px;
+    margin-top: 6px;
+}
+
+.left-bottom {
+    border-top: 1px solid #ddd;
+    margin-top: 16px;
+    padding-top: 12px;
+}
+
+.left-bottom h3 {
+    font-size: 19px;
+    line-height: 1.1;
+    margin-bottom: 7px;
+}
+
+.main-story img {
+    display: block;
+    width: 100%;
+    height: 310px;
+    object-fit: cover;
+}
+
+.photo-caption {
+    text-align: right;
+    color: #777;
+    font-family: Arial, sans-serif;
+    font-size: 9px;
+    margin-top: 4px;
+}
+
+.visually-hidden {
+    position: absolute;
+    width: 1px;
+    height: 1px;
+    overflow: hidden;
+    clip: rect(0, 0, 0, 0);
+}
+
+.center-stories {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 17px;
+    border-top: 1px solid #ddd;
+    padding-top: 12px;
+    margin-top: 12px;
+}
+
+.image-story {
+    border-right: 1px solid #ddd;
+    padding-right: 12px;
+}
+
+.image-story img {
+    display: block;
+    width: 100%;
+    height: 140px;
+    object-fit: cover;
+    margin-bottom: 8px;
+}
+
+.image-story h3,
+.text-story h3 {
+    font-size: 16px;
+    line-height: 1.15;
+}
+
+.text-story {
+    padding-top: 2px;
+}
+
+.read-time {
+    display: block;
+    color: #777;
+    font-family: Arial, sans-serif;
+    font-size: 9px;
+    margin-top: 8px;
+}
+
+.bottom-headlines {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 15px;
+    margin-top: 18px;
+    border-top: 1px solid #ddd;
+    padding-top: 12px;
+}
+
+.bottom-headlines article + article {
+    border-left: 1px solid #ddd;
+    padding-left: 12px;
+}
+
+.bottom-headlines h3 {
+    font-size: 15px;
+    line-height: 1.15;
+}
+
+.bottom-headlines span {
+    display: block;
+    font-family: Arial, sans-serif;
+    color: #777;
+    font-size: 9px;
+    margin-top: 7px;
+}
+
+.right-column {
+    border-left: 1px solid #ddd;
+    padding-left: 17px;
+}
+
+.travel-story img {
+    width: 100%;
+    height: 170px;
+    display: block;
+    object-fit: cover;
+    margin-bottom: 10px;
+}
+
+.travel-story h2 {
+    font-size: 23px;
+    line-height: 1.1;
+    margin-bottom: 7px;
+}
+
+.travel-story p {
+    font-size: 13px;
+    line-height: 1.35;
+    color: #555;
+}
+
+.small-stories {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 12px;
+    border-top: 1px solid #ddd;
+    margin-top: 16px;
+    padding-top: 12px;
+}
+
+.small-stories img {
+    display: block;
+    width: 100%;
+    height: 95px;
+    object-fit: cover;
+    margin-bottom: 7px;
+}
+
+.small-stories h3 {
+    font-size: 13px;
+    line-height: 1.15;
+}
+
+.opinion-section {
+    border-top: 1px solid #888;
+    margin-top: 17px;
+    padding-top: 10px;
+}
+
+.opinion-section > h4 {
+    font-size: 13px;
+    margin-bottom: 10px;
+}
+
+.opinion-story {
+    display: flex;
+    justify-content: space-between;
+    gap: 10px;
+}
+
+.opinion-story > div {
+    flex: 1;
+}
+
+.opinion-story img {
+    width: 43px;
+    height: 43px;
+    object-fit: cover;
+    border-radius: 50%;
+}
+
+.author {
+    font-family: Arial, sans-serif;
+    color: #555;
+    font-size: 9px;
+}
+
+.opinion-story h3 {
+    font-size: 16px;
+    line-height: 1.1;
+    margin-top: 5px;
+}
+
+footer {
+    border-top: 2px solid #222;
+    margin-top: 22px;
+    padding: 15px 0;
+    text-align: center;
+}
+
+footer p {
+    font-size: 22px;
+    font-weight: bold;
+}
+
+footer span {
+    display: block;
+    margin-top: 6px;
+    font-family: Arial, sans-serif;
+    color: #666;
+    font-size: 10px;
+}
+
+@media (max-width: 900px) {
+    body {
+        padding: 0 14px;
+    }
+
+    .top-links {
+        display: none;
+    }
+
+    .news-layout {
+        grid-template-columns: 1fr 2fr;
+        gap: 14px;
+    }
+
+    .right-column {
+        grid-column: 1 / -1;
+        border-left: none;
+        padding-left: 0;
+        border-top: 1px solid #ddd;
+        padding-top: 15px;
+    }
+
+    .right-column .travel-story img {
+        height: 240px;
+    }
+
+    .navigation {
+        justify-content: flex-start;
+        overflow-x: auto;
+    }
+}
+
+@media (max-width: 560px) {
+    body {
+        padding: 0 10px;
+    }
+
+    .masthead h1 {
+        font-size: 34px;
+        letter-spacing: -1.8px;
+    }
+
+    .account-links button {
+        padding: 6px;
+        font-size: 8px;
+    }
+
+    .news-layout {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .left-column {
+        border-right: none;
+        padding-right: 0;
+    }
+
+    .center-column {
+        order: -1;
+    }
+
+    .main-story img {
+        height: 230px;
+    }
+
+    .image-story img {
+        height: 110px;
+    }
+
+    .right-column .travel-story img {
+        height: 190px;
+    }
+
+    .small-stories img {
+        height: 100px;
+    }
+
+    .lead-small h2 {
+        font-size: 23px;
+    }
+}

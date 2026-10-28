@@ -2,29 +2,203 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <title>Home - Login</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>The New York Times - Breaking News</title>
+    <link rel="stylesheet" href="style.css">
 </head>
 <body>
 
-    <h1>Welcome to Our Website</h1>
-    <h2>Login Form</h2>
+    <header class="top-header">
+        <div class="top-tools">
+            <div class="left-tools">
+                <button class="menu-button" aria-label="Menu">☰</button>
+                <button class="search-button" aria-label="Search">⌕</button>
+            </div>
+            <div class="top-links">
+                U.S. INTERNATIONAL CANADA ESPAÑOL 中文
+            </div>
+            <div class="account-links">
+                <button>SUBSCRIBE FOR $0.50/WEEK</button>
+                <button>LOG IN</button>
+            </div>
+        </div>
 
-    <form action="signup1.html" method="get">
-        <label>Email:</label>
-        <input type="email" name="email"
-               placeholder="Enter your email" required>
-        <br><br>
+        <div class="date-row">
+            <div>
+                <strong>Thursday, June 8, 2023</strong>
+                <span>Today's Paper</span>
+            </div>
+            <div class="weather">☀️ 68°F</div>
+        </div>
 
-        <label>Password:</label>
-        <input type="password" name="password"
-               placeholder="Enter your password" required>
-        <br><br>
+        <div class="masthead">
+            <h1>The New York Times</h1>
+        </div>
 
-        <button type="submit">Login</button>
-    </form>
+        <nav class="navigation">
+            <a href="#">World</a>
+            <a href="#">U.S.</a>
+            <a href="#">Politics</a>
+            <a href="#">N.Y.</a>
+            <a href="#">Business</a>
+            <a href="#">Opinion</a>
+            <a href="#">Science</a>
+            <a href="#">Health</a>
+            <a href="#">Sports</a>
+            <a href="#">Arts</a>
+            <a href="#">Books</a>
+            <a href="#">Style</a>
+            <a href="#">Food</a>
+            <a href="#">Travel</a>
+            <a href="#">Magazine</a>
+            <a href="#">Cooking</a>
+            <a href="#">The Athletic</a>
+            <a href="#">Wirecutter</a>
+            <a href="#">Games</a>
+        </nav>
+    </header>
 
-    <p>Don't have an account?</p>
-    <a href="signup1.html">Sign Up</a>
+    <main class="news-layout">
+
+        <aside class="left-column">
+            <article class="lead-small">
+                <div class="live-label">LIVE <span>• 4m ago</span></div>
+                <h2>Noxious Air Spreads Across U.S., but Conditions Are Expected to Be Better</h2>
+                <p>
+                    Dozens of wildfires in Canada, the smoke over the Northeast was spreading,
+                    with alerts extending to the Midwest and the Carolinas.
+                </p>
+                <a href="#">See more updates →</a>
+
+                <div class="air-quality">
+                    <h4>Air Quality in the U.S.</h4>
+                    <div class="quality-grid">
+                        <div>
+                            <span>Washington, D.C.</span>
+                            <strong>Hazardous</strong>
+                        </div>
+                        <div>
+                            <span>New York</span>
+                            <strong>Very Unhealthy</strong>
+                        </div>
+                        <div>
+                            <span>Boston</span>
+                            <strong>Moderate</strong>
+                        </div>
+                        <div>
+                            <span>Chicago</span>
+                            <strong>Moderate</strong>
+                        </div>
+                    </div>
+                    <small>Source: AirNow.gov · Data as of 7 a.m. Eastern</small>
+                </div>
+            </article>
+
+            <article class="left-bottom">
+                <h3>Just How Bad Was the Pollution in New York?</h3>
+                <p>
+                    The level of pollution Wednesday was higher than the worst day in
+                    San Francisco after major wildfires in 2018.
+                </p>
+            </article>
+        </aside>
+
+        <section class="center-column">
+            <article class="main-story">
+                <img
+                    src="https://images.unsplash.com/photo-1504711434969-e33886168f5c?auto=format&fit=crop&w=1100&q=85"
+                    alt="News photograph showing a city street"
+                >
+                <h2 class="visually-hidden">
+                    Noxious Air Spreads Across the United States
+                </h2>
+                <p class="photo-caption">Getty Images</p>
+            </article>
+
+            <div class="center-stories">
+                <article class="image-story">
+                    <img
+                        src="https://images.unsplash.com/photo-1519608487953-e999c86e7455?auto=format&fit=crop&w=700&q=85"
+                        alt="Purple and blue atmospheric lights"
+                    >
+                    <h3>When Will It End? Sooner for the Northeast, Later for Elsewhere.</h3>
+                    <span class="read-time">3 MIN READ</span>
+                </article>
+
+                <article class="text-story">
+                    <h3>Scientists have long warned that global warming will increase the chance of climate extremes.</h3>
+                    <span class="read-time">4 MIN READ</span>
+                </article>
+            </div>
+
+            <div class="bottom-headlines">
+                <article>
+                    <h3>When Will It End? Sooner for the Northeast, Later for Elsewhere.</h3>
+                    <span>3 MIN READ</span>
+                </article>
+                <article>
+                    <h3>How to Keep Indoor Air Clean if You Don't Have an Air Purifier</h3>
+                    <span>3 MIN READ</span>
+                </article>
+            </div>
+        </section>
+
+        <aside class="right-column">
+            <article class="travel-story">
+                <img
+                    src="https://images.unsplash.com/photo-1555990793-da11153b2473?auto=format&fit=crop&w=800&q=85"
+                    alt="Historic European coastal city"
+                >
+                <h2>36 Hours in Split, Croatia</h2>
+                <p>
+                    This Croatian port city is fueled by long seafood lunches,
+                    ancient traditions and wine-filled evenings.
+                </p>
+                <span class="read-time">36 HOURS</span>
+            </article>
+
+            <div class="small-stories">
+                <article>
+                    <img
+                        src="https://images.unsplash.com/photo-1516321318423-f06f85e504b3?auto=format&fit=crop&w=400&q=80"
+                        alt="Person working with a computer"
+                    >
+                    <h3>Drone video showed a critically endangered porpoise still hanging on in Mexico</h3>
+                    <span class="read-time">3 MIN READ</span>
+                </article>
+
+                <article>
+                    <img
+                        src="https://images.unsplash.com/photo-1455390582262-044cdead277a?auto=format&fit=crop&w=400&q=80"
+                        alt="Writing in a notebook"
+                    >
+                    <h3>What can I do about my daughter's father showing up drunk?</h3>
+                    <span class="read-time">4 MIN READ</span>
+                </article>
+            </div>
+
+            <section class="opinion-section">
+                <h4>Opinion</h4>
+                <article class="opinion-story">
+                    <div>
+                        <span class="author">CARL H. COLLINS</span>
+                        <h3>The Republican Silly Season Has Begun</h3>
+                        <span class="read-time">4 MIN READ</span>
+                    </div>
+                    <img
+                        src="https://images.unsplash.com/photo-1500648767791-00dcc994a43e?auto=format&fit=crop&w=100&q=80"
+                        alt="Opinion columnist portrait"
+                    >
+                </article>
+            </section>
+        </aside>
+
+    </main>
+
+    <footer>
+        <p>The New York Times</p>
+        <span>News · Opinion · Arts · Life</span>
+    </footer>
 
 </body>
 </html>
